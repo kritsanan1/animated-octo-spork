@@ -1,0 +1,48 @@
+# Application Sitemap
+
+
+Public
+- /splash
+- /login
+- /signup
+
+
+App (Tabs)
+- /(tabs)/dashboard  → /dashboard
+- /(tabs)/messages   → /messages
+- /(tabs)/upload     → /upload
+- /(tabs)/connect    → /connect
+- /(tabs)/subscription → /subscription
+
+
+Additional Routes
+- /calendar
+- /comments
+- /profile
+- /settings
+- /+not-found
+
+
+API (tRPC over /api/trpc)
+- example.hi (mutation)
+- ayrshare.createPost (mutation)
+- ayrshare.getHistory (query)
+- ayrshare.getAnalytics (query)
+- ayrshare.deletePost (mutation)
+- ayrshare.getProfiles (query)
+- ayrshare.generateJWT (mutation)
+- ayrshare.getPost (query)
+- ayrshare.updatePost (mutation)
+- user.getProfile (query, protected)
+- user.updateProfile (mutation, protected)
+- posts.create (mutation, protected)
+- posts.get (query, protected)
+- posts.update (mutation, protected)
+- posts.delete (mutation, protected)
+- socialAccounts.get (query, protected)
+- socialAccounts.connect (mutation, protected)
+- socialAccounts.disconnect (mutation, protected)
+- analytics.getDashboardStats (query, protected)
+- messages.get (query, protected)
+- messages.markAsRead (mutation, protected)
+
